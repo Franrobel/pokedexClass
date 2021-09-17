@@ -49,27 +49,29 @@ import CaughtPokemon from "./CaughtPokemon";
 //       </ul>
 //   </div>
 //   )}
-  
+
 // const CaughtPokemon = () => {
 //   const date = new Date().toLocaleDateString()
 //     return <p>Caught 0 pokemon in {date}</p>
 // }
 function App() {
-  const logWhenClicked = ()=>{
+  const logWhenClicked = () => {
     console.log("Esto son los pokemones")
   }
   return (
     <>
-    <div>  
-    <Logo handleClick={logWhenClicked} appName="Pokedex"/>
-    <BestPokemon 
-    abilities={['Anticipation', 'Adaptability', 'Run-Away']} 
-    BestPokemon={["pikachu ", "squirtle ", "bulbazur"]}
-    />
-    <CaughtPokemon date={new Date().toLocaleDateString()} />
-    </div>
+      <div>
+        <Logo handleClick={logWhenClicked} appName="Pokedex" />
+        <BestPokemon
+          abilities={['Anticipation', 'Adaptability', 'Run-Away']}
+          BestPokemon={["pikachu, ", "squirtle, ", "bulbazur"]}
+        />
+        <CaughtPokemon
+          BestPokemon={["pikachu", "squirtle", "bulbazur"]}
+          date={new Date().toLocaleDateString()} />
+      </div>
     </>
-    )
+  )
 }
 export default App;
 
