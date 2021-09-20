@@ -27,7 +27,9 @@ import React from "react";
 import Logo from "./Logo";
 import BestPokemon from "./BestPokemon";
 import CaughtPokemon from "./CaughtPokemon";
-import PokemonMoves from "./PokemonMoves";
+//import PokemonMoves from "./PokemonMoves";
+import PokemonMovesSelector from "./PokemonMovesSelector";
+import PokemonCity from "./PokemonCity";
 // const Logo = (props) => {
 //   const appName = "Pokedex"
 //   return (
@@ -70,7 +72,8 @@ function App() {
         <CaughtPokemon
           BestPokemon={["pikachu", "squirtle", "bulbazur"]}
           date={new Date().toLocaleDateString()} />
-          <PokemonMoves />
+          <PokemonMovesSelector />
+          <PokemonCity />
       </div>
     </>
   )
