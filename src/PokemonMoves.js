@@ -20,7 +20,7 @@ function PokemonMoves(props) {
             <p>{pokemonData ? pokemonData.name :'no funciona'}'s moves:</p>
             <ul>
                 {pokemonData ? pokemonData.moves.map((move, index) => {
-                                        return <li key={index}>{move.move.name}</li>;
+                     return <li key={index}>{move.move.name}</li>;
                 })           :null     }
             </ul>
         </div>
